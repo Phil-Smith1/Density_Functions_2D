@@ -1,0 +1,23 @@
+input_dir,/Users/philsmith/Documents/Work/Xcode Projects/Density_Functions_2D/Input/
+output_dir,/Users/philsmith/Documents/Work/Xcode Projects/Density_Functions_2D/Output/
+input_file,Input.csv
+experiment_file,Experiment.csv
+v_file,v_file.csv
+replot,0
+draw_zones,0
+extract_data,1
+sample_rate,20
+densigram,0
+variance,0
+plot_graph,1
+title,0
+title_str,Density_Functions
+extract_experiment_data,0
+plot_experiments,0
+time_vary_k,0
+time_vary_m,0
+vary_k,0
+vary_m,0
+uplusv,1
+superimposed,0
+use_threads,0

@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Colour.cpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/imgproc/imgproc.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/imgproc.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/version.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/cvstd.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/neon_utils.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/vsx_utils.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/check.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/traits.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/matx.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/saturate.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/fast_math.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/types.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/mat.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/bufferpool.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/mat.inl.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/persistence.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/operations.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/cvstd.inl.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/utility.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/optim.hpp \
+  /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/core/ovx.hpp
