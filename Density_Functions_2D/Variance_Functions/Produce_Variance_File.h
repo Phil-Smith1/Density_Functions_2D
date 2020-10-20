@@ -1,9 +1,10 @@
 #pragma once
 
+#include "Framework_Parameters.h"
+#include "Input.h"
 #include "Variance.h"
 
 #include <fstream>
 #include <sstream>
-#include <vector>
 
-void Produce_Variance_File ( string const& data_file );
+void Produce_Variance_File ( Framework_Parameters const& f_p, Input const& input );

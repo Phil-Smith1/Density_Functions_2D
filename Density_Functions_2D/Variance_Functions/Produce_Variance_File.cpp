@@ -1,11 +1,17 @@
+#include "Framework_Parameters.h"
+#include "Input.h"
 #include "Variance.h"
 
 #include <fstream>
 #include <sstream>
-#include <vector>
 
-void Produce_Variance_File ( string const& data_file )
+void Produce_Variance_File ( Framework_Parameters const& f_p, Input const& input )
 {
+    string data_file;
+    
+    if (f_p.uplusv) data_file = f_p.output_dir + input.data_file + to_string( input.num_v ) + "_" + to_string( input. rep_iter ) + ".txt";
+    else data_file = f_p.output_dir + input.data_file + ".txt";
+    
     ifstream ifs( data_file );
     ofstream ofs( "/Users/philsmith/Documents/Work/Xcode Projects/Density_Functions_2D/Output/Data/Variance.txt" );
     

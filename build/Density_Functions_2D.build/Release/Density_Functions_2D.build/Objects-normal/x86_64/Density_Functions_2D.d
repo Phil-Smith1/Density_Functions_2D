@@ -1446,13 +1446,13 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/integral_promotion.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/promote.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Triangulation_structural_filtering_traits.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Read_Functions/Read_V.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Add_Random_Pts.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Brillouin_Algorithm.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment_Data.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Initialise_Pt_Cloud.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Initialise_Lattice.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Transformation_Matrix.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Frac_To_Cart_Coords.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Read_Functions/Read_V.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Add_Random_Pts.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Initialise_Pt_Cloud.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Brillouin_Algorithm.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Surrounding_Cloud.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Compute_Brillouin_Zones.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Dividing_Space.h \
@@ -1805,6 +1805,7 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/internal/info_check.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Compute_Experiment_Data.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment_Data.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Draw_Brillouin_Zones.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Scale_Drawing.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Bounding_Box.h \
@@ -1854,6 +1855,7 @@ dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Variance_Functions/Produce_Variance_File.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Variance_Functions/Variance.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Variance.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/gnuplot-iostream.h \
   /usr/local/Cellar/boost/1.69.0/include/boost/iostreams/device/file_descriptor.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/iostreams/categories.hpp \
@@ -1959,9 +1961,10 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/convenience.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/string_file.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/fstream.hpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_File_Names.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Replot_Max_Radius.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Graph_Title.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Densigram.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_File_Names.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_Standard.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Experiment_Calculations.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Write_Experiment_Data.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiments.h \

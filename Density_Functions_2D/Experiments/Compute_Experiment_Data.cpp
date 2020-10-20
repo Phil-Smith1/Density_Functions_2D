@@ -1,16 +1,15 @@
+#include "Input.h"
 #include "B_Poly.h"
+#include "Experiment_Data.h"
 
-using namespace std;
-
-typedef K::Point_2 P2;
 typedef Poly::Vertex_iterator vertex_iterator;
 
-void Compute_Experiment_Data ( int zone_limit, vector<B_Poly>const& polys, vector<double>& num_vertices, vector<double>& num_edges, vector<double>& num_polygons, vector<double>& perimetre_length )
+void Compute_Experiment_Data ( Input const& input, vector<B_Poly>const& polys, Experiment_Data& e_d )
 {
-    vector<int> num_vertices_per_zone( zone_limit, 0 );
-    vector<int> num_edges_per_zone( zone_limit, 0 );
-    vector<int> num_polys_per_zone( zone_limit, 0 );
-    vector<double> perim_length_per_zone( zone_limit, 0 );
+    vector<int> num_vertices_per_zone( input.zone_limit, 0 );
+    vector<int> num_edges_per_zone( input.zone_limit, 0 );
+    vector<int> num_polys_per_zone( input.zone_limit, 0 );
+    vector<double> perim_length_per_zone( input.zone_limit, 0 );
     
     for (int counter = 0; counter < polys.size(); ++counter)
     {
@@ -48,16 +47,16 @@ void Compute_Experiment_Data ( int zone_limit, vector<B_Poly>const& polys, vecto
     
     num_vertices_per_zone[0] = 1 + num_edges_per_zone[0] - num_polys_per_zone[0];
     
-    for (int counter_1 = 1; counter_1 < zone_limit; ++counter_1)
+    for (int counter_1 = 1; counter_1 < input.zone_limit; ++counter_1)
     {
         num_vertices_per_zone[counter_1] = num_edges_per_zone[counter_1] - num_polys_per_zone[counter_1];
     }
     
-    for (int counter = 0; counter < zone_limit; ++counter)
+    for (int counter = 0; counter < input.zone_limit; ++counter)
     {
-        num_vertices[counter] += num_vertices_per_zone[counter];
-        num_edges[counter] += num_edges_per_zone[counter];
-        num_polygons[counter] += num_polys_per_zone[counter];
-        perimetre_length[counter] += perim_length_per_zone[counter];
+        e_d.m_vertices[input.motif_iter].second[counter] += num_vertices_per_zone[counter];
+        e_d.m_edges[input.motif_iter].second[counter] += num_vertices_per_zone[counter];
+        e_d.m_polys[input.motif_iter].second[counter] += num_vertices_per_zone[counter];
+        e_d.m_perim[input.motif_iter].second[counter] += num_vertices_per_zone[counter];
     }
 }

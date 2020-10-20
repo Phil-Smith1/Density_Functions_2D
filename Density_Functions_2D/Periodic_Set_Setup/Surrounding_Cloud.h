@@ -1,9 +1,7 @@
 #pragma once
 
-#include "Frac_To_Cart_Coords.h"
-
-using namespace std;
+#include "Input.h"
 
 typedef K::Vector_2 V2;
 
-void Surrounding_Cloud ( int perim, double ** matrix, int index, vector<P2>const& base_pts, multimap<double, P2>& cloud );
+void Surrounding_Cloud ( Input const& input, int index, multimap<double, P2>& cloud );

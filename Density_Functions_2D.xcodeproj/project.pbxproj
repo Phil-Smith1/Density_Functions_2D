@@ -40,7 +40,6 @@
 		EE5FE740242BC10300A65B14 /* Norm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE73F242BC10300A65B14 /* Norm.cpp */; };
 		EE5FE742242D16CE00A65B14 /* Irregular_Sector_Area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE741242D16CE00A65B14 /* Irregular_Sector_Area.cpp */; };
 		EE5FE746242D184400A65B14 /* Intersection_Area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE745242D184400A65B14 /* Intersection_Area.cpp */; };
-		EE5FE750242D208700A65B14 /* Graph_Title.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE749242D208700A65B14 /* Graph_Title.cpp */; };
 		EE5FE751242D208700A65B14 /* Replot_Max_Radius.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE74B242D208700A65B14 /* Replot_Max_Radius.cpp */; };
 		EE5FE752242D208700A65B14 /* Plot_Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE74E242D208700A65B14 /* Plot_Graph.cpp */; };
 		EE5FE753242D208700A65B14 /* Plot_Graph_File_Names.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5FE74F242D208700A65B14 /* Plot_Graph_File_Names.cpp */; };
@@ -63,6 +62,10 @@
 		EEB8EB742525D41D00565918 /* Experiment_Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EB732525D41D00565918 /* Experiment_Data.cpp */; };
 		EEB8EB782525FD4900565918 /* Experiment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EB772525FD4900565918 /* Experiment.cpp */; };
 		EEB8EB7A2525FE6900565918 /* Read_Experiment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEB8EB792525FE6900565918 /* Read_Experiment.cpp */; };
+		EEF72E5C253F1D11003ED8F7 /* Initialise_Lattice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E5B253F1D11003ED8F7 /* Initialise_Lattice.cpp */; };
+		EEF72E60253F860F003ED8F7 /* Plot_Variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E5F253F860F003ED8F7 /* Plot_Variance.cpp */; };
+		EEF72E62253F86E5003ED8F7 /* Plot_Graph_Standard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E61253F86E5003ED8F7 /* Plot_Graph_Standard.cpp */; };
+		EEF72E64253F86F2003ED8F7 /* Plot_Densigram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -145,11 +148,9 @@
 		EE5FE745242D184400A65B14 /* Intersection_Area.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Intersection_Area.cpp; sourceTree = "<group>"; };
 		EE5FE747242D208600A65B14 /* gnuplot-iostream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gnuplot-iostream.h"; sourceTree = "<group>"; };
 		EE5FE748242D208600A65B14 /* Plot_Graph_File_Names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plot_Graph_File_Names.h; sourceTree = "<group>"; };
-		EE5FE749242D208700A65B14 /* Graph_Title.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph_Title.cpp; sourceTree = "<group>"; };
 		EE5FE74A242D208700A65B14 /* Plot_Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plot_Graph.h; sourceTree = "<group>"; };
 		EE5FE74B242D208700A65B14 /* Replot_Max_Radius.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Replot_Max_Radius.cpp; sourceTree = "<group>"; };
 		EE5FE74C242D208700A65B14 /* Replot_Max_Radius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Replot_Max_Radius.h; sourceTree = "<group>"; };
-		EE5FE74D242D208700A65B14 /* Graph_Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph_Title.h; sourceTree = "<group>"; };
 		EE5FE74E242D208700A65B14 /* Plot_Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Graph.cpp; sourceTree = "<group>"; };
 		EE5FE74F242D208700A65B14 /* Plot_Graph_File_Names.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Graph_File_Names.cpp; sourceTree = "<group>"; };
 		EEA803BD2534708000ECC1CF /* Brillouin_Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Brillouin_Algorithm.h; sourceTree = "<group>"; };
@@ -190,6 +191,14 @@
 		EEB8EB772525FD4900565918 /* Experiment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Experiment.cpp; sourceTree = "<group>"; };
 		EEB8EB792525FE6900565918 /* Read_Experiment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Read_Experiment.cpp; sourceTree = "<group>"; };
 		EEB8EB7B2525FE7200565918 /* Read_Experiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Read_Experiment.h; sourceTree = "<group>"; };
+		EEF72E5B253F1D11003ED8F7 /* Initialise_Lattice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Initialise_Lattice.cpp; sourceTree = "<group>"; };
+		EEF72E5D253F1D1D003ED8F7 /* Initialise_Lattice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Initialise_Lattice.h; sourceTree = "<group>"; };
+		EEF72E5E253F8601003ED8F7 /* Plot_Variance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Variance.h; sourceTree = "<group>"; };
+		EEF72E5F253F860F003ED8F7 /* Plot_Variance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Variance.cpp; sourceTree = "<group>"; };
+		EEF72E61253F86E5003ED8F7 /* Plot_Graph_Standard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Graph_Standard.cpp; sourceTree = "<group>"; };
+		EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Densigram.cpp; sourceTree = "<group>"; };
+		EEF72E65253F86FC003ED8F7 /* Plot_Densigram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Densigram.h; sourceTree = "<group>"; };
+		EEF72E66253F8706003ED8F7 /* Plot_Graph_Standard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Graph_Standard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +307,8 @@
 				EEB8EB692524A7F200565918 /* Add_Random_Pts.h */,
 				EE5FE6F4242B866200A65B14 /* Frac_To_Cart_Coords.cpp */,
 				EE5FE6F3242B865600A65B14 /* Frac_To_Cart_Coords.h */,
+				EEF72E5B253F1D11003ED8F7 /* Initialise_Lattice.cpp */,
+				EEF72E5D253F1D1D003ED8F7 /* Initialise_Lattice.h */,
 				EE5FE6EE242B847700A65B14 /* Initialise_Pt_Cloud.cpp */,
 				EE5FE6ED242B846A00A65B14 /* Initialise_Pt_Cloud.h */,
 				EE5FE6F6242B86D100A65B14 /* Surrounding_Cloud.cpp */,
@@ -396,16 +407,20 @@
 		EEA803E5253731E400ECC1CF /* Plot_Functions */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FE749242D208700A65B14 /* Graph_Title.cpp */,
-				EE5FE74D242D208700A65B14 /* Graph_Title.h */,
+				EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */,
+				EEF72E65253F86FC003ED8F7 /* Plot_Densigram.h */,
 				EEB8EB6B2524BF6A00565918 /* Plot_Experiments.cpp */,
 				EEB8EB6A2524BF5D00565918 /* Plot_Experiments.h */,
 				EE5FE74F242D208700A65B14 /* Plot_Graph_File_Names.cpp */,
 				EE5FE748242D208600A65B14 /* Plot_Graph_File_Names.h */,
+				EEF72E61253F86E5003ED8F7 /* Plot_Graph_Standard.cpp */,
+				EEF72E66253F8706003ED8F7 /* Plot_Graph_Standard.h */,
 				EE5FE74E242D208700A65B14 /* Plot_Graph.cpp */,
 				EE5FE74A242D208700A65B14 /* Plot_Graph.h */,
 				EEB8EB6D2524FE3600565918 /* Plot_Perim.cpp */,
 				EEB8EB6F2524FE3F00565918 /* Plot_Perim.h */,
+				EEF72E5F253F860F003ED8F7 /* Plot_Variance.cpp */,
+				EEF72E5E253F8601003ED8F7 /* Plot_Variance.h */,
 				EE5FE74B242D208700A65B14 /* Replot_Max_Radius.cpp */,
 				EE5FE74C242D208700A65B14 /* Replot_Max_Radius.h */,
 			);
@@ -496,6 +511,7 @@
 				EE5FE725242BBE8E00A65B14 /* Disk_Triangle_Intersection.cpp in Sources */,
 				EE5FE740242BC10300A65B14 /* Norm.cpp in Sources */,
 				EE5FE6E8242B81A700A65B14 /* Initialise_Parameters.cpp in Sources */,
+				EEF72E64253F86F2003ED8F7 /* Plot_Densigram.cpp in Sources */,
 				EE5FE6EF242B847700A65B14 /* Initialise_Pt_Cloud.cpp in Sources */,
 				EE5FE751242D208700A65B14 /* Replot_Max_Radius.cpp in Sources */,
 				EEB8EB7A2525FE6900565918 /* Read_Experiment.cpp in Sources */,
@@ -518,6 +534,7 @@
 				EE5FE6FE242B8D8800A65B14 /* Dividing_Space.cpp in Sources */,
 				EEB8EB682524A7E700565918 /* Add_Random_Pts.cpp in Sources */,
 				EEB8EB6425237C6A00565918 /* Read_Input.cpp in Sources */,
+				EEF72E60253F860F003ED8F7 /* Plot_Variance.cpp in Sources */,
 				EEA803C5253476AC00ECC1CF /* Framework_Parameters.cpp in Sources */,
 				EE5FE719242BB60E00A65B14 /* Extract_Data_Pts.cpp in Sources */,
 				EE417FA524E6ED2D00B6B8AD /* Variance.cpp in Sources */,
@@ -525,7 +542,6 @@
 				EE5FE6DC242B7D0F00A65B14 /* Density_Functions_2D.cpp in Sources */,
 				EE5FE737242BC0A300A65B14 /* Triangle_Area.cpp in Sources */,
 				EE5FE6F7242B86D100A65B14 /* Surrounding_Cloud.cpp in Sources */,
-				EE5FE750242D208700A65B14 /* Graph_Title.cpp in Sources */,
 				EE5FE710242B946000A65B14 /* Line_Intersect_Polygon.cpp in Sources */,
 				EE5FE6EC242B826D00A65B14 /* Print_Info.cpp in Sources */,
 				EE5FE71F242BB97000A65B14 /* Data_Pts_For_Given_Radius.cpp in Sources */,
@@ -534,6 +550,7 @@
 				EE5FE6F1242B84EB00A65B14 /* Transformation_Matrix.cpp in Sources */,
 				EE5FE6F5242B866200A65B14 /* Frac_To_Cart_Coords.cpp in Sources */,
 				EEA803C12534738500ECC1CF /* Experiment_Calculations.cpp in Sources */,
+				EEF72E62253F86E5003ED8F7 /* Plot_Graph_Standard.cpp in Sources */,
 				EEA803D12534C22200ECC1CF /* Scale_Drawing.cpp in Sources */,
 				EEB8EB782525FD4900565918 /* Experiment.cpp in Sources */,
 				EE5FE734242BC0A300A65B14 /* Line_Circle_Intersections.cpp in Sources */,
@@ -541,6 +558,7 @@
 				EEA803C72534880000ECC1CF /* Read_V.cpp in Sources */,
 				EE5FE73D242BC0E900A65B14 /* Angle_Between_Vectors.cpp in Sources */,
 				EE5FE704242B8E6700A65B14 /* Generate_Square.cpp in Sources */,
+				EEF72E5C253F1D11003ED8F7 /* Initialise_Lattice.cpp in Sources */,
 				EE5FE722242BBC8B00A65B14 /* Data_File_Name.cpp in Sources */,
 				EE5FE70A242B90D100A65B14 /* Max_Distance_To_Polygon.cpp in Sources */,
 				EE5FE736242BC0A300A65B14 /* Edge.cpp in Sources */,

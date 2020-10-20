@@ -1,5 +1,6 @@
 dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph.cpp \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Variance.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/gnuplot-iostream.h \
   /usr/local/Cellar/boost/1.69.0/include/boost/iostreams/device/file_descriptor.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/cstdint.hpp \
@@ -598,7 +599,7 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/convenience.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/string_file.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/fstream.hpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_File_Names.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Replot_Max_Radius.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Input.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
@@ -1548,5 +1549,6 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/integral_promotion.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/promote.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Triangulation_structural_filtering_traits.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Replot_Max_Radius.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Graph_Title.h
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Densigram.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_File_Names.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Graph_Standard.h

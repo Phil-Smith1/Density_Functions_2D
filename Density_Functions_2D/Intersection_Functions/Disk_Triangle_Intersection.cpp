@@ -78,5 +78,22 @@ double Disk_Triangle_Intersection ( Circle const& c, Tri const& t, double max_di
     
     double area = Intersection_Area( c, edges, vertices );
     
+    //if (area > c.area) area -= c.area;
+    //if (area > tri_area) return tri_area;
+    
+    if (area > tri_area + 0.001)
+    {
+        //cout << edges[0].line.oriented_side( P2( 0, 0 ) ) << endl;
+        //cout << edges[1].line.oriented_side( P2( 0, -30 ) ) << endl;
+        //cout << edges[2].line.oriented_side( P2( 0, 0 ) ) << endl;
+        //cout << setprecision( 15 ) << t.vertex( 0 ) << endl;
+        //cout << setprecision( 15 ) << t.vertex( 1 ) << endl;
+        //cout << setprecision( 15 ) << t.vertex( 2 ) << endl;
+        //cout << c.c << endl;
+        //cout << c.r << endl;
+        //cout << max_dist << endl;
+        cout << max_area << " " << area << " " << tri_area << endl << endl;
+    }
+    
     return area;
 }

@@ -8,6 +8,7 @@ pair<double, Point2d> Scale_Drawing ( cv::Point const& image_sizes, vector<vecto
     
     Point2d drawing_sizes( bounding_box.second.x - bounding_box.first.x, bounding_box.second.y - bounding_box.first.y );
     drawing_sizes *= 1.05; // Add a 5% border.
+    
     Point2d drawing_centre( bounding_box.second.x + bounding_box.first.x, bounding_box.second.y + bounding_box.first.y );
     drawing_centre /= (double)2; // Central point of the bounding box.
     

@@ -1,5 +1,6 @@
 dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Compute_Brillouin_Zones.cpp \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Dividing_Space.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Generate_Square.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
@@ -1789,4 +1790,7 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/fusion/support/as_const.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/internal/info_check.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Compute_Experiment_Data.h
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Compute_Experiment_Data.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Input.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment_Data.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment.h

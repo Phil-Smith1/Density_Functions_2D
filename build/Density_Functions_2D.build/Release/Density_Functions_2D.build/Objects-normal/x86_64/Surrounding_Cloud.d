@@ -1,6 +1,6 @@
 dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Surrounding_Cloud.cpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Frac_To_Cart_Coords.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Input.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Simple_cartesian.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Cartesian/Cartesian_base.h \

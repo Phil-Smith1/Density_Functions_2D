@@ -1,8 +1,6 @@
 dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Brillouin_Algorithm.cpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment_Data.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Initialise_Pt_Cloud.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Surrounding_Cloud.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Input.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Simple_cartesian.h \
@@ -1444,10 +1442,8 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/integral_promotion.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/type_traits/promote.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Triangulation_structural_filtering_traits.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Transformation_Matrix.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Frac_To_Cart_Coords.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Periodic_Set_Setup/Surrounding_Cloud.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Compute_Brillouin_Zones.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Dividing_Space.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Brillouin_Zones/Generate_Square.h \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/Polygon_2.h \
@@ -1798,8 +1794,9 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
   /usr/local/Cellar/cgal/5.0.1/include/CGAL/internal/info_check.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Compute_Experiment_Data.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment_Data.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Experiment.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Draw_Brillouin_Zones.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Scale_Drawing.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Drawing_Functions/Bounding_Box.h \
   /usr/local/Cellar/opencv/4.3.0_4/include/opencv4/opencv2/imgproc/imgproc.hpp \

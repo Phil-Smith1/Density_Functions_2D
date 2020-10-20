@@ -8,7 +8,7 @@
 const double tiny_num = 1e-10;
 #endif
 
-void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input const& input, vector<double>const& cell_volume, vector<vector<double>>& results, int num_v, int iter )
+void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input const& input, vector<double>const& cell_volume, vector<vector<double>>& results )
 {
     for (int counter_1 = 0; counter_1 < results.size(); ++counter_1)
     {
@@ -58,7 +58,7 @@ void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input c
     
     string data_file;
     
-    if (f_p.uplusv) data_file = f_p.output_dir + input.data_file + to_string( num_v ) + "_" + to_string( iter ) + ".txt";
+    if (f_p.uplusv) data_file = f_p.output_dir + input.data_file + to_string( input.num_v ) + "_" + to_string( input. rep_iter ) + ".txt";
     else data_file = f_p.output_dir + input.data_file + ".txt";
     
     ofstream ofs( data_file );
