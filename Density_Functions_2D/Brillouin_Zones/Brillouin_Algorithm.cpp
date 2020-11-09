@@ -10,7 +10,7 @@ void Brillouin_Algorithm ( Framework_Parameters const& f_p, Input& input, Experi
 
     vector<double> zone_area( input.zone_limit, 0 ); // Records the area of the zone for each k.
     vector<vector<double>> results; // Will contains sampled values of the density functions.
-
+    
     for (int counter = 0; counter < input.base_pts.size(); ++counter) // Looping over base points.
     {
         clock_t check_point_1 = clock(); // Starts the clock that measures the time of Brillouin zone computations.
