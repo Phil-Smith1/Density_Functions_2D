@@ -1,6 +1,6 @@
 dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiments.cpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Perim.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiment_Zone.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/gnuplot-iostream.h \
   /usr/local/Cellar/boost/1.69.0/include/boost/iostreams/device/file_descriptor.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/cstdint.hpp \
@@ -599,4 +599,5 @@ dependencies: \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/convenience.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/string_file.hpp \
   /usr/local/Cellar/boost/1.69.0/include/boost/filesystem/fstream.hpp \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Classes/Framework_Parameters.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiment_Motif.h

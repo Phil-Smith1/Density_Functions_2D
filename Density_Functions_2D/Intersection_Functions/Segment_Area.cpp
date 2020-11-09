@@ -10,5 +10,5 @@ double Segment_Area ( Circle const& circle, P2 const& p1, P2 const& p2 )
     
     double angle = Angle_Between_Vectors( p3, p4 );
     
-    return 0.5 * circle.r * circle.r * (angle - sin( angle ));
+    return 0.5 * circle.r * circle.r * (angle - sin( (double)angle ));
 }

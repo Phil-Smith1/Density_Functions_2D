@@ -1968,5 +1968,6 @@ dependencies: \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Experiment_Calculations.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Experiments/Write_Experiment_Data.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiments.h \
-  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Perim.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiment_Zone.h \
+  /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Plot_Functions/Plot_Experiment_Motif.h \
   /Users/philsmith/Documents/Work/Xcode\ Projects/Density_Functions_2D/Density_Functions_2D/Write_Functions/Print_Info.h

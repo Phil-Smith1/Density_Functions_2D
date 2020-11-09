@@ -23,14 +23,14 @@ void Brillouin_Algorithm ( Framework_Parameters const& f_p, Input& input, Experi
         
         Compute_Brillouin_Zones( f_p, input, input.base_pts[counter], cloud, zone_area, max_radii, tris, e_d ); // Computing the Brillouin zones.
         
-        if (f_p.draw_zones && counter == 0) Draw_Brillouin_Zones( f_p, input, counter, cloud, tris ); // Drawing the Brillouin zones.
-        
-        if (f_p.extract_data) Extract_Data_Pts( f_p, input, input.base_pts[counter], max_radii, tris, results ); // Computing the intersection of the base point with its Brillouin zones for varying radii.
-        
         clock_t check_point_2 = clock();
         
         e_d.num_runs[input.motif_iter][input.k_iter] += 1;
         e_d.m_time[input.motif_iter].second[input.k_iter].second += check_point_2 - check_point_1;
+        
+        if (f_p.draw_zones && counter == 0) Draw_Brillouin_Zones( f_p, input, counter, cloud, tris ); // Drawing the Brillouin zones.
+        
+        if (f_p.extract_data) Extract_Data_Pts( f_p, input, input.base_pts[counter], max_radii, tris, results ); // Computing the intersection of the base point with its Brillouin zones for varying radii.
     }
 
     if (f_p.extract_data) Combine_And_Write_Extracted_Data( f_p, input, zone_area, results ); // Writing results.

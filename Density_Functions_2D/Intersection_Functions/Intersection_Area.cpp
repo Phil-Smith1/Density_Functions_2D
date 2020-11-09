@@ -67,12 +67,5 @@ double Intersection_Area ( Circle const& c, vector<Edge>& edges, vector<P2> cons
     edges[1].line = edges[1].line.opposite();
     edges[2].line = edges[2].line.opposite();
     
-    //cout << volume1 << endl;
-    //cout << volume2 << endl;
-    //cout << volume3 << endl;
-    //cout << volume4 << endl;
-    //cout << volume5 << endl;
-    //cout << volume6 << endl;
-    
     return c.area - volume1 - volume2 - volume3 + volume4 + volume5 + volume6;
 }

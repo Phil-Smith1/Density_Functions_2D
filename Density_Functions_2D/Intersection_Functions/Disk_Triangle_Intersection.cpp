@@ -16,6 +16,8 @@ double Disk_Triangle_Intersection ( Circle const& c, Tri const& t, double max_di
     vertices.push_back( t.vertex( 1 ) );
     vertices.push_back( t.vertex( 2 ) );
     
+    if (Norm( c.c, vertices[0] ) < c.r + tiny_num && Norm( c.c, vertices[1] ) < c.r + tiny_num && Norm( c.c, vertices[2] ) < c.r + tiny_num) return tri_area;
+    
     double precision = 1e12;
     
     long double x = (long long int)(vertices[0].x() * precision + 0.5);
@@ -69,30 +71,28 @@ double Disk_Triangle_Intersection ( Circle const& c, Tri const& t, double max_di
         edges[2].endpt = vertices[2];
     }
     
-    Circle large_circle( c.c, max_dist * 1.1 );
-    
-    double max_area = Intersection_Area( large_circle, edges, vertices );
-    
-    if (max_area < tiny_num) return 0;
-    //if (max_area > tri_area + 0.0001) return 0;
-    
     double area = Intersection_Area( c, edges, vertices );
     
-    //if (area > c.area) area -= c.area;
-    //if (area > tri_area) return tri_area;
-    
-    if (area > tri_area + 0.001)
+    if (area > tri_area)
     {
-        //cout << edges[0].line.oriented_side( P2( 0, 0 ) ) << endl;
-        //cout << edges[1].line.oriented_side( P2( 0, -30 ) ) << endl;
-        //cout << edges[2].line.oriented_side( P2( 0, 0 ) ) << endl;
-        //cout << setprecision( 15 ) << t.vertex( 0 ) << endl;
-        //cout << setprecision( 15 ) << t.vertex( 1 ) << endl;
-        //cout << setprecision( 15 ) << t.vertex( 2 ) << endl;
-        //cout << c.c << endl;
-        //cout << c.r << endl;
-        //cout << max_dist << endl;
-        cout << max_area << " " << area << " " << tri_area << endl << endl;
+        if (area > tri_area + 5e-4) // This seems to happen when c.r is large (>100).
+        {
+            cout << "Warning: area computed significantly greater than the triangle area." << endl;
+            cout << "Computed area: " << area << " Triangle area: " << tri_area << endl;
+        }
+        
+        return tri_area;
+    }
+    
+    if (area < tiny_num)
+    {
+        if (area < tiny_num - 5e-4) // This seems to happen when c.r is large (>100).
+        {
+            cout << "Warning: area computed significantly negative." << endl;
+            cout << "Computed area: " << area << " Triangle area: " << tri_area << endl;
+        }
+        
+        return 0;
     }
     
     return area;

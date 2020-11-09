@@ -12,5 +12,5 @@ double Triangle_Area ( P2 const& p1, P2 const& p2, P2 const& p3 )
     
     double angle = acos( (p4.x() * p5.x() + p4.y() * p5.y()) / (double)(l1 * l2) );
     
-    return 0.5 * l1 * l2 * sin( angle );
+    return 0.5 * l1 * l2 * sin( (double)angle );
 }

@@ -7,83 +7,83 @@ void Write_Experiment_Data ( Framework_Parameters const& f_p, Experiment_Data co
 {
     if (f_p.time_vary_k)
     {
-        ofstream ofs_1( f_p.output_dir + "Experiments/Data/Runtime.txt" );
+        ofstream ofs( f_p.output_dir + "Experiments/Data/Runtime.txt" );
         
-        ofs_1 << setprecision( 10 ) << experiment_data.m_time[0].second[0].first << " " << experiment_data.m_time[0].second[0].second;
+        ofs << setprecision( 10 ) << experiment_data.m_time[0].second[0].first << " " << experiment_data.m_time[0].second[0].second;
         
         for (int counter = 1; counter < experiment_data.m_time[0].second.size(); ++counter)
         {
-            ofs_1 << endl;
-            ofs_1 << setprecision( 10 ) << experiment_data.m_time[0].second[counter].first << " " << experiment_data.m_time[0].second[counter].second;
+            ofs << endl;
+            ofs << setprecision( 10 ) << experiment_data.m_time[0].second[counter].first << " " << experiment_data.m_time[0].second[counter].second;
         }
         
-        ofs_1.close();
+        ofs.close();
     }
     
     if (f_p.time_vary_m)
     {
-        ofstream ofs_1( f_p.output_dir + "Experiments/Data/Runtime.txt" );
+        ofstream ofs( f_p.output_dir + "Experiments/Data/Runtime.txt" );
         
-        ofs_1 << setprecision( 10 ) << experiment_data.m_time[0].first << " " << experiment_data.m_time[0].second[0].second;
+        ofs << setprecision( 10 ) << experiment_data.m_time[0].first << " " << experiment_data.m_time[0].second[0].second;
         
         for (int counter = 1; counter < experiment_data.m_time.size(); ++counter)
         {
-            ofs_1 << endl;
-            ofs_1 << setprecision( 10 ) << experiment_data.m_time[counter].first << " " << experiment_data.m_time[counter].second[0].second;
+            ofs << endl;
+            ofs << setprecision( 10 ) << experiment_data.m_time[counter].first << " " << experiment_data.m_time[counter].second[0].second;
         }
         
-        ofs_1.close();
+        ofs.close();
     }
         
     if (f_p.vary_k)
     {
-        ofstream ofs_2( f_p.output_dir + "Experiments/Data/Vertices.txt" );
+        ofstream ofs_1( f_p.output_dir + "Experiments/Data/Vertices.txt" );
         
-        ofs_2 << setprecision( 10 ) << 1 << " " << experiment_data.m_vertices[0].second[0];
+        ofs_1 << setprecision( 10 ) << 1 << " " << experiment_data.m_vertices[0].second[0];
         
         for (int counter = 1; counter < experiment_data.m_vertices[0].second.size(); ++counter)
         {
+            ofs_1 << endl;
+            ofs_1 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_vertices[0].second[counter];
+        }
+        
+        ofs_1.close();
+        
+        ofstream ofs_2( f_p.output_dir + "Experiments/Data/Edges.txt" );
+        
+        ofs_2 << setprecision( 10 ) << 1 << " " << experiment_data.m_edges[0].second[0];
+        
+        for (int counter = 1; counter < experiment_data.m_edges[0].second.size(); ++counter)
+        {
             ofs_2 << endl;
-            ofs_2 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_vertices[0].second[counter];
+            ofs_2 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_edges[0].second[counter];
         }
         
         ofs_2.close();
         
-        ofstream ofs_3( f_p.output_dir + "Experiments/Data/Edges.txt" );
+        ofstream ofs_3( f_p.output_dir + "Experiments/Data/Polys.txt" );
         
-        ofs_3 << setprecision( 10 ) << 1 << " " << experiment_data.m_edges[0].second[0];
+        ofs_3 << setprecision( 10 ) << 1 << " " << experiment_data.m_polys[0].second[0];
         
-        for (int counter = 1; counter < experiment_data.m_edges[0].second.size(); ++counter)
+        for (int counter = 1; counter < experiment_data.m_polys[0].second.size(); ++counter)
         {
             ofs_3 << endl;
-            ofs_3 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_edges[0].second[counter];
+            ofs_3 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_polys[0].second[counter];
         }
         
         ofs_3.close();
         
-        ofstream ofs_4( f_p.output_dir + "Experiments/Data/Polys.txt" );
+        ofstream ofs_4( f_p.output_dir + "Experiments/Data/Perim.txt" );
         
-        ofs_4 << setprecision( 10 ) << 1 << " " << experiment_data.m_polys[0].second[0];
-        
-        for (int counter = 1; counter < experiment_data.m_polys[0].second.size(); ++counter)
-        {
-            ofs_4 << endl;
-            ofs_4 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_polys[0].second[counter];
-        }
-        
-        ofs_4.close();
-        
-        ofstream ofs_5( f_p.output_dir + "Experiments/Data/Perim.txt" );
-        
-        ofs_5 << setprecision( 10 ) << 1 << " " << experiment_data.m_perim[0].second[0];
+        ofs_4 << setprecision( 10 ) << 1 << " " << experiment_data.m_perim[0].second[0];
         
         for (int counter = 1; counter < experiment_data.m_perim[0].second.size(); ++counter)
         {
-            ofs_5 << endl;
-            ofs_5 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_perim[0].second[counter];
+            ofs_4 << endl;
+            ofs_4 << setprecision( 10 ) << counter + 1 << " " << experiment_data.m_perim[0].second[counter];
         }
         
-        ofs_5.close();
+        ofs_4.close();
     }
     
     if (f_p.vary_m)
@@ -104,52 +104,52 @@ void Write_Experiment_Data ( Framework_Parameters const& f_p, Experiment_Data co
             }
         }
         
-        ofstream ofs_2( f_p.output_dir + "Experiments/Data/Vertices.txt" );
+        ofstream ofs_1( f_p.output_dir + "Experiments/Data/Vertices.txt" );
         
-        ofs_2 << setprecision( 10 ) << experiment_data.m_vertices[0].first << " " << total_vertices[0];
+        ofs_1 << setprecision( 10 ) << experiment_data.m_vertices[0].first << " " << total_vertices[0];
         
         for (int counter = 1; counter < experiment_data.m_vertices.size(); ++counter)
         {
+            ofs_1 << endl;
+            ofs_1 << setprecision( 10 ) << experiment_data.m_vertices[counter].first << " " << total_vertices[counter];
+        }
+        
+        ofs_1.close();
+        
+        ofstream ofs_2( f_p.output_dir + "Experiments/Data/Edges.txt" );
+        
+        ofs_2 << setprecision( 10 ) << experiment_data.m_edges[0].first << " " << total_edges[0];
+        
+        for (int counter = 1; counter < experiment_data.m_edges.size(); ++counter)
+        {
             ofs_2 << endl;
-            ofs_2 << setprecision( 10 ) << experiment_data.m_vertices[counter].first << " " << total_vertices[counter];
+            ofs_2 << setprecision( 10 ) << experiment_data.m_edges[counter].first << " " << total_edges[counter];
         }
         
         ofs_2.close();
         
-        ofstream ofs_3( f_p.output_dir + "Experiments/Data/Edges.txt" );
+        ofstream ofs_3( f_p.output_dir + "Experiments/Data/Polys.txt" );
         
-        ofs_3 << setprecision( 10 ) << experiment_data.m_edges[0].first << " " << total_edges[0];
+        ofs_3 << setprecision( 10 ) << experiment_data.m_polys[0].first << " " << total_polys[0];
         
-        for (int counter = 1; counter < experiment_data.m_edges.size(); ++counter)
+        for (int counter = 1; counter < experiment_data.m_polys.size(); ++counter)
         {
             ofs_3 << endl;
-            ofs_3 << setprecision( 10 ) << experiment_data.m_edges[counter].first << " " << total_edges[counter];
+            ofs_3 << setprecision( 10 ) << experiment_data.m_polys[counter].first << " " << total_polys[counter];
         }
         
         ofs_3.close();
         
-        ofstream ofs_4( f_p.output_dir + "Experiments/Data/Polys.txt" );
+        ofstream ofs_4( f_p.output_dir + "Experiments/Data/Perim.txt" );
         
-        ofs_4 << setprecision( 10 ) << experiment_data.m_polys[0].first << " " << total_polys[0];
-        
-        for (int counter = 1; counter < experiment_data.m_polys.size(); ++counter)
-        {
-            ofs_4 << endl;
-            ofs_4 << setprecision( 10 ) << experiment_data.m_polys[counter].first << " " << total_polys[counter];
-        }
-        
-        ofs_4.close();
-        
-        ofstream ofs_5( f_p.output_dir + "Experiments/Data/Perim.txt" );
-        
-        ofs_5 << setprecision( 10 ) << experiment_data.m_perim[0].first << " " << total_length[0];
+        ofs_4 << setprecision( 10 ) << experiment_data.m_perim[0].first << " " << total_length[0];
         
         for (int counter = 1; counter < experiment_data.m_perim.size(); ++counter)
         {
-            ofs_5 << endl;
-            ofs_5 << setprecision( 10 ) << experiment_data.m_perim[counter].first << " " << total_length[counter];
+            ofs_4 << endl;
+            ofs_4 << setprecision( 10 ) << experiment_data.m_perim[counter].first << " " << total_length[counter];
         }
         
-        ofs_5.close();
+        ofs_4.close();
     }
 }

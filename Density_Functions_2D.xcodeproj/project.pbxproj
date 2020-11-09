@@ -66,6 +66,8 @@
 		EEF72E60253F860F003ED8F7 /* Plot_Variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E5F253F860F003ED8F7 /* Plot_Variance.cpp */; };
 		EEF72E62253F86E5003ED8F7 /* Plot_Graph_Standard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E61253F86E5003ED8F7 /* Plot_Graph_Standard.cpp */; };
 		EEF72E64253F86F2003ED8F7 /* Plot_Densigram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */; };
+		EEF72E6925408B72003ED8F7 /* Plot_Experiment_Motif.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E6825408B72003ED8F7 /* Plot_Experiment_Motif.cpp */; };
+		EEF72E6B25408B7E003ED8F7 /* Plot_Experiment_Zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEF72E6A25408B7E003ED8F7 /* Plot_Experiment_Zone.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +201,10 @@
 		EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Densigram.cpp; sourceTree = "<group>"; };
 		EEF72E65253F86FC003ED8F7 /* Plot_Densigram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Densigram.h; sourceTree = "<group>"; };
 		EEF72E66253F8706003ED8F7 /* Plot_Graph_Standard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Graph_Standard.h; sourceTree = "<group>"; };
+		EEF72E6725408B67003ED8F7 /* Plot_Experiment_Motif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Experiment_Motif.h; sourceTree = "<group>"; };
+		EEF72E6825408B72003ED8F7 /* Plot_Experiment_Motif.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Experiment_Motif.cpp; sourceTree = "<group>"; };
+		EEF72E6A25408B7E003ED8F7 /* Plot_Experiment_Zone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plot_Experiment_Zone.cpp; sourceTree = "<group>"; };
+		EEF72E6C25408B8E003ED8F7 /* Plot_Experiment_Zone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plot_Experiment_Zone.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +415,10 @@
 			children = (
 				EEF72E63253F86F2003ED8F7 /* Plot_Densigram.cpp */,
 				EEF72E65253F86FC003ED8F7 /* Plot_Densigram.h */,
+				EEF72E6825408B72003ED8F7 /* Plot_Experiment_Motif.cpp */,
+				EEF72E6725408B67003ED8F7 /* Plot_Experiment_Motif.h */,
+				EEF72E6A25408B7E003ED8F7 /* Plot_Experiment_Zone.cpp */,
+				EEF72E6C25408B8E003ED8F7 /* Plot_Experiment_Zone.h */,
 				EEB8EB6B2524BF6A00565918 /* Plot_Experiments.cpp */,
 				EEB8EB6A2524BF5D00565918 /* Plot_Experiments.h */,
 				EE5FE74F242D208700A65B14 /* Plot_Graph_File_Names.cpp */,
@@ -417,8 +427,6 @@
 				EEF72E66253F8706003ED8F7 /* Plot_Graph_Standard.h */,
 				EE5FE74E242D208700A65B14 /* Plot_Graph.cpp */,
 				EE5FE74A242D208700A65B14 /* Plot_Graph.h */,
-				EEB8EB6D2524FE3600565918 /* Plot_Perim.cpp */,
-				EEB8EB6F2524FE3F00565918 /* Plot_Perim.h */,
 				EEF72E5F253F860F003ED8F7 /* Plot_Variance.cpp */,
 				EEF72E5E253F8601003ED8F7 /* Plot_Variance.h */,
 				EE5FE74B242D208700A65B14 /* Replot_Max_Radius.cpp */,
@@ -444,6 +452,8 @@
 				EE5FE721242BBC8B00A65B14 /* Data_File_Name.cpp */,
 				EE5FE720242BBC8B00A65B14 /* Data_File_Name.h */,
 				EE5FE6E7242B81A700A65B14 /* Initialise_Parameters.cpp */,
+				EEB8EB6D2524FE3600565918 /* Plot_Perim.cpp */,
+				EEB8EB6F2524FE3F00565918 /* Plot_Perim.h */,
 			);
 			path = Spare_Code;
 			sourceTree = "<group>";
@@ -508,6 +518,7 @@
 				EE5FE6FB242B8C8F00A65B14 /* Compute_Brillouin_Zones.cpp in Sources */,
 				EE5FE746242D184400A65B14 /* Intersection_Area.cpp in Sources */,
 				EE5FE753242D208700A65B14 /* Plot_Graph_File_Names.cpp in Sources */,
+				EEF72E6925408B72003ED8F7 /* Plot_Experiment_Motif.cpp in Sources */,
 				EE5FE725242BBE8E00A65B14 /* Disk_Triangle_Intersection.cpp in Sources */,
 				EE5FE740242BC10300A65B14 /* Norm.cpp in Sources */,
 				EE5FE6E8242B81A700A65B14 /* Initialise_Parameters.cpp in Sources */,
@@ -561,6 +572,7 @@
 				EEF72E5C253F1D11003ED8F7 /* Initialise_Lattice.cpp in Sources */,
 				EE5FE722242BBC8B00A65B14 /* Data_File_Name.cpp in Sources */,
 				EE5FE70A242B90D100A65B14 /* Max_Distance_To_Polygon.cpp in Sources */,
+				EEF72E6B25408B7E003ED8F7 /* Plot_Experiment_Zone.cpp in Sources */,
 				EE5FE736242BC0A300A65B14 /* Edge.cpp in Sources */,
 				EE5FE752242D208700A65B14 /* Plot_Graph.cpp in Sources */,
 				EEA803DB2535DC4500ECC1CF /* Combine_And_Write_Extracted_Data.cpp in Sources */,

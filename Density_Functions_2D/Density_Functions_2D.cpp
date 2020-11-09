@@ -15,8 +15,6 @@
 
 int main( int, char*[] )
 {
-    //return 0;
-    
     clock_t start_code_runtime = clock(); // Starts the clock measuring the runtime of the code.
     
     chrono::time_point<chrono::steady_clock> start_absolute_time = chrono::steady_clock::now(); // Starts the clock measuring the absolute time to complete the code.
@@ -88,9 +86,9 @@ int main( int, char*[] )
                         
                         if (!f_p.replot) Brillouin_Algorithm( f_p, input, e_d ); // Main computations occur here.
                         
-                        if (f_p.variance) Produce_Variance_File( f_p, input );
+                        if (f_p.variance) Produce_Variance_File( f_p, input ); // Producing the variance file.
                         
-                        if (f_p.plot_graph) Plot_Graph( f_p, input );
+                        if (f_p.plot_graph) Plot_Graph( f_p, input ); // Plotting the graph.
                     }
                 }
             }
@@ -101,17 +99,11 @@ int main( int, char*[] )
     
     ifs_1.close();
     
-    if (f_p.extract_experiment_data) Experiment_Calculations( f_p.time_vary_k, f_p.vary_k, e, e_d );
+    if (!f_p.replot && f_p.extract_experiment_data) Experiment_Calculations( f_p, e_d ); // Experiment calculations, e.g. taking the average over all iterations.
     
-    if (!f_p.replot && f_p.extract_experiment_data) Write_Experiment_Data( f_p, e_d );
+    if (!f_p.replot && f_p.extract_experiment_data) Write_Experiment_Data( f_p, e_d ); // Writing the experiment statistics to a txt file.
     
-    if (f_p.plot_experiments) Plot_Experiments( f_p, e.k[0] );
-    
-    /*P2 p1 = P2( 50, -15 );
-    P2 p2 = P2( 51.1538, -13.4615 );
-    P2 p3 = P2( 50, -10 );
-    Circle c = Circle( P2( 30, 0 ), 25 );
-    double max_dist = 26.8742;*/
+    if (f_p.plot_experiments) Plot_Experiments( f_p, e.k[0] ); // Plotting experiment results in a graph.
     
     /*P2 p1 = P2( 88.333333339259, -18.333333284811 );
     P2 p2 = P2( 89.99999996, -20.000000000001 );
@@ -143,9 +135,57 @@ int main( int, char*[] )
     Circle c = Circle( P2( 69.99999994, 0 ), 29 );
     double max_dist = 35.4597863461711;*/
     
+    /*P2 p1 = P2( 100.00000005, 37.499999997394 );
+    P2 p2 = P2( 100.000000080004, 36.666666698338 );
+    P2 p3 = P2( 101.774193602183, 39.032258059765);
+    Circle c = Circle( P2( 10.00000005, 0 ), 97.5 );
+    double max_dist = 105.843175385408;*/
+    
+    /*P2 p1 = P2( -111.34146340382, 7.804878086636 );
+    P2 p2 = P2( -113.571428561647, 3.4243e-08 );
+    P2 p3 = P2( -108.999999977248, 0 );
+    Circle c = Circle( P2( 0, 0 ), 109 );
+    double max_dist = 0;*/
+    
+    /*P2 p1 = P2( 60.384615388322, 119.999999999999 );
+    P2 p2 = P2( 70.00000003499, 119.999999985003 );
+    P2 p3 = P2( 69.230769237152, 120.769230773611 );
+    Circle c = Circle( P2( 70.00000005, 0 ), 120 );
+    double max_dist = 0;*/
+    
+    /*P2 p1 = P2( 71.22641510011, 86.32075469966 );
+    P2 p2 = P2( 72.692307692301, 81.923076923087 );
+    P2 p3 = P2( 75, 82.5 );
+    Circle c = Circle( P2( 0, 0 ), 117.5 );
+    double max_dist = 0;*/
+    // Three vertices inside circle return tri_area.
+    
+    //Square
+    
+    /*P2 p1 = P2( -1, -0.5 );
+    P2 p2 = P2( -0.833333333333333, -0.8333333333333333 );
+    P2 p3 = P2( -0.5, -1 );
+    Circle c = Circle( P2( 0, 0 ), 1.15 );
+    double max_dist = 0;
+    // Add Norm v1 + v2 to denominators when vertex outside / on boundary of circle in irreg sector.*/
+    
+    /*P2 p1 = P2( -0.5, -0.5 );
+    P2 p2 = P2( -1, -0.5 );
+    P2 p3 = P2( -0.5, -1 );
+    Circle c = Circle( P2( 0, 0 ), 1.1 );
+    double max_dist = 0;*/
+    //Find midpoint.
+    
+    /*P2 p1 = P2( -30, 22.5 );
+    P2 p2 = P2( -30, -22.5 );
+    P2 p3 = P2( -20, 27.5 );
+    Circle c = Circle( P2( 0, 0 ), 33 );
+    double max_dist = 0;*/
+    // Add vertex to midpoint.
+    
     /*Tri t = Tri( p1, p2, p3 );
     
-    cout << Disk_Triangle_Intersection( c, t, max_dist ) << endl;*/
+    cout << Disk_Triangle_Intersection( c, t, max_dist ) <<  " " << t.area() << endl;*/
     
     Print_Info( start_code_runtime, start_absolute_time );
     
