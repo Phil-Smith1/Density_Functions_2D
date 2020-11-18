@@ -1,17 +1,9 @@
-0: Custom.
-1: Unit Square lattice.
-2: Hexagonal Lattice.
-3: Rectangle Lattice.
-4: 4th chosen lattice.
-5: 5th chosen lattice.
-6: 6th chosen lattice.
-7: Unit square lattice + (0.3,0.4).
-8: Hexagonal Lattice + (0.3,0.4).
-9: Rectangle Lattice + (0.3,0.4).
-10: 4th chosen lattice + (0.3,0.4).
-11: 5th chosen lattice + (0.3,0.4).
-12: 6th chosen lattice + (0.3,0.4).
-13: 2-Point motif.
+This is the directory from which the input to the 2D density functions code can be customised.
 
-Superhomometricity_A: Superhomometric point set A.
-Superhomometricity_B: Superhomometric point set B.
+The Framework_Parameters file contains parameters such as directories and whether the Brillouin zones should be drawn or not.
+
+The Experiment file contains three lines. The number on the first line is the 1 more than the number of random points to be added to the motif. (1 if no random points to be added.) The number on the second line is the number of Brilllouin zones to be computed, which equates to 1 more than the number of density functions computed. The number on the third line is the number of repetitions of the setup, so should usually be 1, but should be 2 for U+V experiments and x if we want to repeat the experiment for x random point sets.
+
+The v_file contains a list of files, where each file corresponds to a V in the U+V experiments.
+
+The Input file contains a list of files, where each file contains a list of further files that correspond to the cell parameters and the fractional coordinates.
