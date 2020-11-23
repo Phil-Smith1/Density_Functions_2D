@@ -56,6 +56,35 @@ void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input c
         }
     }
     
+    // Adding 0th density function
+    
+    if (!f_p.densigram)
+    {
+        bool df0_is_0 = false;
+        
+        for (int counter_1 = 0; counter_1 < results.size(); ++counter_1)
+        {
+            for (int counter_2 = input.zone_limit; counter_2 > 1; --counter_2)
+            {
+                results[counter_1][counter_2] = results[counter_1][counter_2 - 1];
+            }
+            
+            if (df0_is_0) results[counter_1][1] = tiny_num;
+            
+            else
+            {
+                results[counter_1][1] = 1;
+                
+                for (int counter_2 = 2; counter_2 < input.zone_limit + 1; ++counter_2)
+                {
+                    results[counter_1][1] -= results[counter_1][counter_2];
+                }
+            }
+            
+            if (results[counter_1][1] < tiny_num) df0_is_0 = true;
+        }
+    }
+    
     string data_file;
     
     if (f_p.uplusv) data_file = f_p.output_dir + input.data_file + to_string( input.num_v ) + "_" + to_string( input. rep_iter ) + ".txt";
@@ -65,7 +94,7 @@ void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input c
     
     ofs << setprecision( 10 ) << results[0][0];
     
-    for (int counter = 0; counter < input.zone_limit - 1; ++counter)
+    for (int counter = 0; counter < input.zone_limit; ++counter)
     {
         ofs << " " << results[0][counter + 1];
     }
@@ -76,7 +105,7 @@ void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input c
         
         ofs << setprecision( 10 ) << results[counter_1][0];
         
-        for (int counter_2 = 0; counter_2 < input.zone_limit - 1; ++counter_2)
+        for (int counter_2 = 0; counter_2 < input.zone_limit; ++counter_2)
         {
             ofs << " " << results[counter_1][counter_2 + 1];
         }

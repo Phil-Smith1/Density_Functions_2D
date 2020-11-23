@@ -8,4 +8,10 @@ void Plot_Graph_File_Names ( Framework_Parameters const& f_p, Input const& input
     
     if (f_p.uplusv) graph_file = input.graph_file + to_string( input.num_v ) + "_" + to_string( input.rep_iter ) + ".pdf";
     else graph_file = input.graph_file + ".pdf";
+    
+    if (f_p.superimposed)
+    {
+        data_file_1 = "Data/Custom_1.txt";
+        data_file_2 = "Data/Custom_2.txt";
+    }
 }

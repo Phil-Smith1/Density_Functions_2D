@@ -3,7 +3,7 @@ output_dir,/Users/philsmith/Documents/Work/Xcode Projects/Density_Functions_2D/O
 input_file,Input.csv
 experiment_file,Experiment.csv
 v_file,v_file.csv
-replot,0
+replot,1
 draw_zones,0
 extract_data,1
 sample_rate,20
