@@ -3,3 +3,5 @@ Changes made to Density Functions 2D:
 Dist Triangle Intersection Function:
 
 Was "if (tri.area() < 1e-10 * 1e4) return 0."
+
+Added zero density.

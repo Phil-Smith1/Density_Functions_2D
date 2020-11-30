@@ -59,15 +59,30 @@ void Plot_Graph_Standard ( Framework_Parameters const& f_p, Input& input )
     if (!f_p.superimposed) gp << "set key horizontal at graph 0.5, graph 1.03 center bottom font ', 22' spacing 1.5 samplen 1.5\n";
     else gp << "set key horizontal at graph 0.5, graph 1.04 center bottom font ', 18' samplen 2\n";
     
-    gp << "set style line 1 lc rgb '#94E3FF' lw 3\n";
-    gp << "set style line 2 lc rgb '#0d61ec' lw 3\n";
-    gp << "set style line 3 lc rgb '#24ae1d' lw 3\n";
-    gp << "set style line 4 lc rgb '#ffae00' lw 3\n";
-    gp << "set style line 5 lc rgb '#e70000' lw 3\n";
-    gp << "set style line 6 lc rgb '#db0dec' lw 3\n";
-    gp << "set style line 7 lc rgb '#7B0985' lw 3\n";
-    gp << "set style line 8 lc rgb '#87663E' lw 3\n";
-    gp << "set style line 9 lc rgb '#000000' lw 3\n";
+    if (f_p.zero_density)
+    {
+        gp << "set style line 1 lc rgb '#94E3FF' lw 3\n";
+        gp << "set style line 2 lc rgb '#0d61ec' lw 3\n";
+        gp << "set style line 3 lc rgb '#24ae1d' lw 3\n";
+        gp << "set style line 4 lc rgb '#ffae00' lw 3\n";
+        gp << "set style line 5 lc rgb '#e70000' lw 3\n";
+        gp << "set style line 6 lc rgb '#db0dec' lw 3\n";
+        gp << "set style line 7 lc rgb '#7B0985' lw 3\n";
+        gp << "set style line 8 lc rgb '#87663E' lw 3\n";
+        gp << "set style line 9 lc rgb '#000000' lw 3\n";
+    }
+    
+    else
+    {
+        gp << "set style line 1 lc rgb '#0d61ec' lw 3\n";
+        gp << "set style line 2 lc rgb '#24ae1d' lw 3\n";
+        gp << "set style line 3 lc rgb '#ffae00' lw 3\n";
+        gp << "set style line 4 lc rgb '#e70000' lw 3\n";
+        gp << "set style line 5 lc rgb '#db0dec' lw 3\n";
+        gp << "set style line 6 lc rgb '#7B0985' lw 3\n";
+        gp << "set style line 7 lc rgb '#87663E' lw 3\n";
+        gp << "set style line 8 lc rgb '#000000' lw 3\n";
+    }
     
     gp << "set output \"" + graph_file + "\"\n";
     
@@ -77,34 +92,82 @@ void Plot_Graph_Standard ( Framework_Parameters const& f_p, Input& input )
     
     if (f_p.superimposed) key_title = "k = 0";
     
+    if (!f_p.zero_density)
+    {
+        key_title = "{/Symbol y}@_1^A";
+        
+        if (f_p.superimposed) key_title = "k = 1";
+    }
+    
     string plot;
     
     plot += "plot '" + data_file_1 + "' using 1:2 smooth csplines ls 1 title '" + key_title + "'";
     
-    for (int counter = 1; counter < input.zone_limit; ++counter)
+    if (f_p.zero_density)
     {
-        key_title = "  {/Symbol y}@_{" + to_string( counter ) + "}^A";
-        
-        if (f_p.superimposed) key_title = " k = " + to_string( counter );
-        
-        plot += ", '" + data_file_1 + "' using 1:" + to_string( counter + 2 ) + "smooth csplines ls " + to_string( counter + 1 ) + " title '" + key_title + "'";
+        for (int counter = 1; counter < input.zone_limit; ++counter)
+        {
+            key_title = "  {/Symbol y}@_{" + to_string( counter ) + "}^A";
+            
+            if (f_p.superimposed) key_title = " k = " + to_string( counter );
+            
+            plot += ", '" + data_file_1 + "' using 1:" + to_string( counter + 2 ) + "smooth csplines ls " + to_string( counter + 1 ) + " title '" + key_title + "'";
+        }
+    }
+    
+    else
+    {
+        for (int counter = 1; counter < input.zone_limit - 1; ++counter)
+        {
+            key_title = "  {/Symbol y}@_{" + to_string( counter + 1 ) + "}^A";
+            
+            if (f_p.superimposed) key_title = " k = " + to_string( counter + 1 );
+            
+            plot += ", '" + data_file_1 + "' using 1:" + to_string( counter + 2 ) + "smooth csplines ls " + to_string( counter + 1 ) + " title '" + key_title + "'";
+        }
     }
     
     if (f_p.superimposed)
     {
-        gp << "set style line 11 dt 2 lc rgb '#94E3FF' lw 3\n";
-        gp << "set style line 12 dt 2 lc rgb '#0d61ec' lw 3\n";
-        gp << "set style line 13 dt 2 lc rgb '#24ae1d' lw 3\n";
-        gp << "set style line 14 dt 2 lc rgb '#ffae00' lw 3\n";
-        gp << "set style line 15 dt 2 lc rgb '#e70000' lw 3\n";
-        gp << "set style line 16 dt 2 lc rgb '#db0dec' lw 3\n";
-        gp << "set style line 17 dt 2 lc rgb '#7B0985' lw 3\n";
-        gp << "set style line 18 dt 2 lc rgb '#87663E' lw 3\n";
-        gp << "set style line 19 dt 2 lc rgb '#000000' lw 3\n";
-        
-        for (int counter = 0; counter < input.zone_limit; ++counter)
+        if (f_p.zero_density)
         {
-            plot += ", '" + data_file_2 + "' using 1:" + to_string( counter + 2 ) + " smooth csplines ls " + to_string( counter + 11 ) + " notitle";
+            gp << "set style line 11 dt 2 lc rgb '#94E3FF' lw 3\n";
+            gp << "set style line 12 dt 2 lc rgb '#0d61ec' lw 3\n";
+            gp << "set style line 13 dt 2 lc rgb '#24ae1d' lw 3\n";
+            gp << "set style line 14 dt 2 lc rgb '#ffae00' lw 3\n";
+            gp << "set style line 15 dt 2 lc rgb '#e70000' lw 3\n";
+            gp << "set style line 16 dt 2 lc rgb '#db0dec' lw 3\n";
+            gp << "set style line 17 dt 2 lc rgb '#7B0985' lw 3\n";
+            gp << "set style line 18 dt 2 lc rgb '#87663E' lw 3\n";
+            gp << "set style line 19 dt 2 lc rgb '#000000' lw 3\n";
+        }
+        
+        else
+        {
+            gp << "set style line 11 dt 2 lc rgb '#0d61ec' lw 3\n";
+            gp << "set style line 12 dt 2 lc rgb '#24ae1d' lw 3\n";
+            gp << "set style line 13 dt 2 lc rgb '#ffae00' lw 3\n";
+            gp << "set style line 14 dt 2 lc rgb '#e70000' lw 3\n";
+            gp << "set style line 15 dt 2 lc rgb '#db0dec' lw 3\n";
+            gp << "set style line 16 dt 2 lc rgb '#7B0985' lw 3\n";
+            gp << "set style line 17 dt 2 lc rgb '#87663E' lw 3\n";
+            gp << "set style line 18 dt 2 lc rgb '#000000' lw 3\n";
+        }
+        
+        if (f_p.zero_density)
+        {
+            for (int counter = 0; counter < input.zone_limit; ++counter)
+            {
+                plot += ", '" + data_file_2 + "' using 1:" + to_string( counter + 2 ) + " smooth csplines ls " + to_string( counter + 11 ) + " notitle";
+            }
+        }
+        
+        else
+        {
+            for (int counter = 0; counter < input.zone_limit - 1; ++counter)
+            {
+                plot += ", '" + data_file_2 + "' using 1:" + to_string( counter + 2 ) + " smooth csplines ls " + to_string( counter + 11 ) + " notitle";
+            }
         }
     }
     

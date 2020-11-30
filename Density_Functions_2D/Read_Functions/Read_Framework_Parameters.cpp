@@ -145,6 +145,16 @@ bool Read_Framework_Parameters ( Framework_Parameters& f_p )
     getline( stream, val, ',' );
     getline( stream, val, ',' );
     
+    f_p.zero_density = stoi( val );
+    
+    getline( ifs, line_data );
+    
+    stream.clear();
+    stream << line_data;
+    
+    getline( stream, val, ',' );
+    getline( stream, val, ',' );
+    
     f_p.title = stoi( val );
     
     getline( ifs, line_data );
