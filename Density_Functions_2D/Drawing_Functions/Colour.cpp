@@ -12,10 +12,7 @@ Scalar Colour_4( int n )
 
 Scalar Grey_Colour( int k, int n )
 {
-    double colour;
-    
-    if (n == 1) colour = 0;
-    else colour = 0 + 255 * (k - 1) / (double)(n);
+    double colour = 255 - 255 * k / (double)n;
     
     return CV_RGB( colour, colour, colour );
 }

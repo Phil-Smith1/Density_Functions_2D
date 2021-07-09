@@ -52,10 +52,10 @@ void Combine_And_Write_Extracted_Data ( Framework_Parameters const& f_p, Input c
             
             for (int counter_2 = 0; counter_2 < input.zone_limit - 1; ++counter_2)
             {
-                if (results[counter_1][counter_2 + 1] > 1 - tiny_num * 1e5) results[counter_1][counter_2 + 1] = 1 - tiny_num * 1e5;
+                if (results[counter_1][counter_2 + 1] > 1 - tiny_num * 1e6) results[counter_1][counter_2 + 1] = 1 - tiny_num * 1e6;
                 
-                if (abs( results[counter_1][counter_2 + 1] ) < tiny_num * 1e5) results[counter_1][counter_2 + 1] = tiny_num * 1e5;
-                else if (results[counter_1][counter_2 + 1] < 0) results[counter_1][counter_2 + 1] = tiny_num * 1e5;
+                if (abs( results[counter_1][counter_2 + 1] ) < tiny_num * 1e6) results[counter_1][counter_2 + 1] = tiny_num * 1e6;
+                else if (results[counter_1][counter_2 + 1] < 0) results[counter_1][counter_2 + 1] = tiny_num * 1e6;
             }
         }
     }

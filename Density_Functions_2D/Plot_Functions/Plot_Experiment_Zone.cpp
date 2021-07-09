@@ -8,10 +8,10 @@ void Plot_Experiment_Zone ( Framework_Parameters const& f_p, string const& file_
     double terminal_size_y = 3.5;
     
     double border = 3;
-    double bmargin = 4;
-    double lmargin = 11;
+    double bmargin = 5;
+    double lmargin = 13;
     double tmargin = 2;
-    double rmargin = 2;
+    double rmargin = 3;
     
     string data_file = "Experiments/Data/" + file_name + ".txt";
     string graph_file = "Experiments/Graphs/" + file_name + ".pdf";
@@ -29,13 +29,13 @@ void Plot_Experiment_Zone ( Framework_Parameters const& f_p, string const& file_
     gp << "set rmargin " + to_string( rmargin ) + "\n";
     gp << "set tmargin " + to_string( tmargin ) + "\n";
     
-    gp << "set ylabel '" + y_label + "' font ', 24' offset -2, 0\n";
+    gp << "set ylabel '" + y_label + "' font ', 26' offset -4, 0\n";
         
-    gp << "set xlabel 'Index k of Brillouin Zone' font ', 20' offset 0, -0.5\n";
+    gp << "set xlabel 'Order k of Voronoi Zone' font ', 26' offset 0, -1\n";
         
     gp << "set xrange [1:30]\n";
-    gp << "set xtics font ', 18'\n";
-    gp << "set ytics font ', 18'\n";
+    gp << "set xtics font ', 24'\n";
+    gp << "set ytics font ', 24'\n";
     
     gp << "set style line 1 lc rgb '#" + colour + "' lw 3\n";
     

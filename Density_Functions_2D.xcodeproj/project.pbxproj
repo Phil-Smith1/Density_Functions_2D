@@ -698,22 +698,25 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/gmp/6.1.2_2/include,
-					/usr/local/Cellar/boost/1.69.0/include,
-					/usr/local/Cellar/cgal/5.0.1/include,
+					/usr/local/Cellar/gmp/6.2.1/include,
+					/usr/local/Cellar/boost/1.74.0/include,
+					/usr/local/Cellar/cgal/5.1.1/include,
 					/usr/local/Cellar/gemmi/include,
 					/usr/local/Cellar/gemmi/third_party,
-					/usr/local/Cellar/mpfr/4.0.2/include,
+					/usr/local/Cellar/mpfr/4.1.0/include,
 					/usr/local/Cellar/opencv/4.3.0_4/include/opencv4,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/gmp/6.1.2_2/lib,
-					/usr/local/Cellar/boost/1.69.0/lib,
-					/usr/local/Cellar/cgal/5.0.1/lib,
-					/usr/local/Cellar/mpfr/4.0.2/lib,
+					/usr/local/Cellar/gmp/6.2.1/lib,
+					/usr/local/Cellar/boost/1.74.0/lib,
+					/usr/local/Cellar/cgal/5.1.1/lib,
+					/usr/local/Cellar/mpfr/4.1.0/lib,
 					/usr/local/Cellar/opencv/4.3.0_4/lib,
 				);
 				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-lgmp",
 					"-lmpfr",
 					"-lboost_iostreams",
 					"-lopencv_calib3d",
@@ -744,22 +747,25 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/gmp/6.1.2_2/include,
-					/usr/local/Cellar/boost/1.69.0/include,
-					/usr/local/Cellar/cgal/5.0.1/include,
+					/usr/local/Cellar/gmp/6.2.1/include,
+					/usr/local/Cellar/boost/1.74.0/include,
+					/usr/local/Cellar/cgal/5.1.1/include,
 					/usr/local/Cellar/gemmi/include,
 					/usr/local/Cellar/gemmi/third_party,
-					/usr/local/Cellar/mpfr/4.0.2/include,
+					/usr/local/Cellar/mpfr/4.1.0/include,
 					/usr/local/Cellar/opencv/4.3.0_4/include/opencv4,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/gmp/6.1.2_2/lib,
-					/usr/local/Cellar/boost/1.69.0/lib,
-					/usr/local/Cellar/cgal/5.0.1/lib,
-					/usr/local/Cellar/mpfr/4.0.2/lib,
+					/usr/local/Cellar/gmp/6.2.1/lib,
+					/usr/local/Cellar/boost/1.74.0/lib,
+					/usr/local/Cellar/cgal/5.1.1/lib,
+					/usr/local/Cellar/mpfr/4.1.0/lib,
 					/usr/local/Cellar/opencv/4.3.0_4/lib,
 				);
 				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-lgmp",
 					"-lmpfr",
 					"-lboost_iostreams",
 					"-lopencv_calib3d",

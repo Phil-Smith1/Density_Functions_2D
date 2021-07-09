@@ -5,18 +5,18 @@
 
 void Plot_Densigram ( Framework_Parameters const& f_p, Input& input )
 {
-    double terminal_size_x = 8;
+    double terminal_size_x = 9;
     double terminal_size_y = 3.5;
     
     double border = 3;
-    double bmargin = 4.5;
-    double lmargin = 12;
-    double tmargin = 9;
-    double rmargin = 2;
+    double bmargin = 5.5;
+    double lmargin = 13;
+    double tmargin = 5;
+    double rmargin = 3;
     
     if (f_p.superimposed) tmargin = 4;
     
-    double yrange = 1.0001;
+    double yrange = 1.002;
     
     string data_file_1;
     string data_file_2;
@@ -46,17 +46,17 @@ void Plot_Densigram ( Framework_Parameters const& f_p, Input& input )
     
     else gp << "set tmargin " + to_string( tmargin ) + "\n";
     
-    if (!f_p.superimposed ) gp << "set ylabel '{/Symbol S}@_1^n{/Symbol y}@_k^A(t)' font ', 24' offset -1.5, 0\n";
-    else gp << "set ylabel '{/Symbol S}@_1^n{/Symbol y}_k(t)' font ', 20' offset -0.5, 0\n";
+    //if (!f_p.superimposed ) gp << "set ylabel '{/Symbol S}@_1^n{/Symbol y}@_k^A(t)' font ', 24' offset -1.5, 0\n";
+    //else gp << "set ylabel '{/Symbol S}@_1^n{/Symbol y}_k(t)' font ', 20' offset -0.5, 0\n";
     
-    gp << "set xlabel 'Radius of Balls' font ', 20' offset 0, -0.3\n";
+    //gp << "set xlabel 'Radius of Balls' font ', 20' offset 0, -0.3\n";
     
     gp << "set xrange [0: " << input.max_radius << "]\n";
     gp << "set yrange [0: " << to_string( yrange ) << "]\n";
-    gp << "set xtics font ', 18'\n";
-    gp << "set ytics font ', 18'\n";
+    gp << "set xtics font ', 24'\n";
+    gp << "set ytics font ', 24'\n";
     
-    if (!f_p.superimposed) gp << "set key horizontal at graph 0.5, graph 1.03 center bottom font ', 22' spacing 1.5 samplen 1.5\n";
+    if (!f_p.superimposed) gp << "set key horizontal at graph 0.5, graph 1.03 center bottom font ', 22' tc rgb 'white' spacing 1.5 samplen 1\n";
     else gp << "set key horizontal at graph 0.5, graph 1.04 center bottom font ', 16'\n";
     
     gp << "set style line 1 lc rgb '#BDDAFF' lw 3\n";
